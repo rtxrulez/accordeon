@@ -1,0 +1,20 @@
+{
+  "name": "frontend-start",
+  "version": "1.0.0",
+  "homepage": "https://github.com/rtxrulez/frontend-start",
+  "authors": [
+    "Какой то автор"
+  ],
+  "description": "Тестовое приложение",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "animate.css": "~3.4.0"
+  }
+}

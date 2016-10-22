@@ -1,0 +1,26 @@
+{
+  "name": "Frontend-start",
+  "version": "0.0.1",
+  "description": "Проект на MDL",
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-connect": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "*",
+    "gulp-rigger": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "gulp.spritesmith": "^4.0.0",
+    "imagemin-pngquant": "*",
+    "opn": "*",
+    "rimraf": "*"
+  }
+}
