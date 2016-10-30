@@ -1,14 +1,11 @@
 
-function ready() {
-	var item = document.querySelectorAll('.accordeon--parent');
-
-	for(var i=0; i<item.length; i++) {
-		item[i].addEventListener('click', function(event) {
-			event.preventDefault();
-			console.log('ok');
-		}, false);
-	};
-}
-
-document.addEventListener("DOMContentLoaded", ready);
-
+var items = document.querySelectorAll('.accordeon--parent');
+for(var i=0; i<items.length; i++) {
+	items[i].addEventListener('click', function(event) {
+	  	for(var y=0; y<items.length; y++) {
+	  		items[y].classList.remove('active');
+	  	}
+	  	this.classList.toggle('active');
+		event.preventDefault();
+	}, false);
+};

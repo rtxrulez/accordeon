@@ -34,7 +34,10 @@ body {
 			// color: #fff;
 		}
 		> .accordeon {
-			display: none;
+			display: block;
+			overflow: hidden;
+			height: 0;
+			transition: height .4s ease;
 		}
 	}
 }
@@ -53,7 +56,7 @@ body {
 			background-color: #ff8663;
 		}
 		> .accordeon {
-			display: block;
+			height: 100px;
 		}
 	}
 
