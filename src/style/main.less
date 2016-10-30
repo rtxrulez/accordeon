@@ -1,6 +1,8 @@
 // Главный файл с стилями
 @border-radius: 14px;
 
+@active-bg: #ff8663;
+
 body {
 	font-size: 15px;
 	font-family: FiraSans, Arial;
@@ -8,10 +10,19 @@ body {
 
 .content {
 	margin: 0 auto;
-	max-width: 460px;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordeon-page {
+	min-width: 460px;
 }
 
-
+.logo {
+	display: block;
+	margin: 15px auto; 
+}
 
 .accordeon {
 	margin: 0;
@@ -29,6 +40,7 @@ body {
 			border-radius: @border-radius;
 			text-decoration: none;
 			width: 100%;
+			transition: background-color .4s ease;
 		}
 		> a {
 			// color: #fff;
@@ -43,6 +55,7 @@ body {
 }
 
 .accordeon--parent {
+	position: relative;
 	> a {
 		background-color: #696666;
 		color: #fff;
@@ -53,10 +66,16 @@ body {
 
 	&.active {
 		> a {
-			background-color: #ff8663;
+			background-color: @active-bg;
 		}
+		
 		> .accordeon {
 			height: 100px;
+		}
+
+		&:before {
+			transform: rotate(180deg);
+			color: #fff;
 		}
 	}
 
@@ -65,5 +84,15 @@ body {
 			background-color:  #e7e7e7;
 			color: #4f4f4f;
 		}
+	}
+
+	&:before {
+		content: '▼';
+		display: block;
+		position: absolute;
+		right: 15px;
+		color: @active-bg;
+		top: 6px;
+    	transition: transform .4s ease, color .4s ease;
 	}
 }
