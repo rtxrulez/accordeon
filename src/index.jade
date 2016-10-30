@@ -1,12 +1,9 @@
 html
 	head
-		meta(charset="utf-8")
-		title Accordeon
-		link(rel="stylesheet", href="css/app.css")
-		script(src="js/main.js")
+		include template/head
 	body
 		.content
-			a.logo(href="#")
+			a.logo(href="#") 
 				img.logo(src="")
 			ul.accordeon
 				li.accordeon__item.accordeon--parent.active
@@ -50,7 +47,4 @@ html
 						li.accordeon__item
 							a(href="") 
 								| Выражения и операторы инструкции
-
-
-
-
+		include template/footer
